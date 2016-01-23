@@ -7,12 +7,11 @@
   <body>
     <header class="main-header">
       <div class="container">
+        <a href="#" class="logo">
+          <img src="http://placehold.it/50x50" alt="Barbershop" width="50" height="50">
+        </a>
         <nav class="main-navigation">
           <ul>
-            <li>
-              <a href="#"><img src="http://placehold.it/50x50" alt="Barbershop"></a> <!-- Это должна быть ссылка на
-                главную страницу или просто картинка? -->
-            </li>
             <li>
               <a href="#">Информация</a>
             </li>
@@ -22,8 +21,8 @@
             <li>
               <a href="#">Прайс-лист</a>
             </li>
-            <li>
-              <a href="#">Магазин</a>
+            <li class="active">
+              Магазин
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -40,124 +39,165 @@
       <div class="breadcrumbs">
         <ul>
           <li>
-            Главная
+            <a href="#">Главная</a>
           </li>
           <li>
-            Магазин
+            <a href="#">Магазин</a>
           </li>
           <li>
             Средства для ухода
           </li>
         </ul>
       </div>
-      <div class="catalog-content"><!-- Не очень понимаю, нужен ли этот div -->
+      <div class="content">
         <div class="catalog-content-left">
           <form action="#" method="get">
-            <span>Производители:</span><br>
-            <input type="checkbox" id="maker-1">
-            <label for="maker-1">
-              Baxter of California
-            </label><br>
-            <input type="checkbox" id="maker-2">
-            <label for="maker-2">
-              Mr Natty
-            </label><br>
-            <input type="checkbox" id="maker-3">
-            <label for="maker-3">
-              Suavecito
-            </label><br>
-            <input type="checkbox" id="maker-4">
-            <label for="maker-4">
-              Malin+Goetz
-            </label><br>
-            <input type="checkbox" id="maker-5">
-            <label for="maker-5">
-              Murray's
-            </label><br>
-            <input type="checkbox" id="maker-6">
-            <label for="maker-6">
-              American crew
-            </label><br>
-            <span>Группы товаров:</span><br>
-            <input type="radio" name="product-groups" value="shaving" id="group-1" checked>
-            <label for="group-1">
-              Бритвенные принадлежности
-            </label><br>
-            <input type="radio" name="product-groups" value="care" id="group-2" checked>
-            <label for="group-2">
-              Средства для ухода
-            </label><br>
-            <input type="radio" name="product-groups" value="accessories" id="group-3" checked>
-            <label for="group-3">
-              Аксессуары
-            </label><br>
-            <a href="#">Показать</a><!-- Не очень понятно, нужна ссылка или кнопка
-              не сказано, как реализуется процесс. -->
+            <h2>Производители:</h2>
+            <ul class="filter">
+              <li>
+                <input type="checkbox" id="maker-1" name="maker">
+                <label for="maker-1">
+                  Baxter of California
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="maker-2" name="maker">
+                <label for="maker-2">
+                  Mr Natty
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="maker-3" name="maker">
+                <label for="maker-3">
+                  Suavecito
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="maker-4" name="maker">
+                <label for="maker-4">
+                  Malin+Goetz
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="maker-5" name="maker">
+                <label for="maker-5">
+                  Murray's
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="maker-6" name="maker">
+                <label for="maker-6">
+                  American crew
+                </label>
+              </li>
+            </ul>
+            <h2>Группы товаров:</h2>
+            <ul class="product-groups">
+              <li>
+                <input type="radio" name="product-groups" value="shaving" id="group-1" checked>
+                <label for="group-1">
+                  Бритвенные принадлежности
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="product-groups" value="care" id="group-2" checked>
+                <label for="group-2">
+                  Средства для ухода
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="product-groups" value="accessories" id="group-3" checked>
+                <label for="group-3">
+                  Аксессуары
+                </label>
+              </li>
+            </ul>
+            <input type="submit" value="Показать">
           </form>
         </div>
         <div class="catalog-content-right">
           <div class="item">
-            <img src="http://placehold.it/150x100" alt="Набор для путешествий"><!-- Дальше абзац новый или просто
-              с новой строки? Или как отделить следующую часть? -->
-            Набор для путешествий<br>
-            &laquo;BAXTER OF CALIFORNIA&raquo;
-            <div class="price">
-              2 900 руб.
+            <img src="http://placehold.it/150x100" alt="Набор для путешествий" width="50" height="50">
+            <p>
+              Набор для путешествий<br>
+              &laquo;BAXTER OF CALIFORNIA&raquo;
+            <p>
+            <div class="buy">
+              <div class="price">2 900 руб.</div>
+              <a href="#">Купить</a>
             </div>
-            <a href="#">Купить</a><!-- Не очень понятно, ссылка или кнопка.
-              Что должно происходить при нажатии? -->
           </div>
           <div class="item">
-            <img src="http://placehold.it/150x100" alt="Увлажняющий кондиционер">
-            Увлажняющий кондиционер<br>
-            &laquo;BAXTER OF CALIFORNIA&raquo;
-            <div class="price">
-              750 руб.
+            <img src="http://placehold.it/150x100" alt="Увлажняющий кондиционер" width="50" height="50">
+            <p>
+              Увлажняющий кондиционер<br>
+              &laquo;BAXTER OF CALIFORNIA&raquo;
+            </p>
+            <div class="buy">
+              <div class="price">750 руб.</div>
+              <a href="#">Купить</a>
             </div>
-            <a href="#">Купить</a>
           </div>
           <div class="item">
-            <img src="http://placehold.it/150x100" alt="Гель для волос">
-            Гель для волос<br>
-            &laquo;SUAVECITO&raquo;
-            <div class="price">
-              290 руб.
+            <img src="http://placehold.it/150x100" alt="Гель для волос" width="50" height="50">
+            <p>
+              Гель для волос<br>
+              &laquo;SUAVECITO&raquo;
+            </p>
+            <div class="buy">
+              <div class="price">290 руб.</div>
+              <a href="#">Купить</a>
             </div>
-            <a href="#">Купить</a>
           </div>
           <div class="item">
-            <img src="http://placehold.it/150x100" alt="Глина для укладки волос">
-            Глина для укладки волос<br>
-            &laquo;AMERICAN CREW&raquo;
-            <div class="price">
-              500 руб.
+            <img src="http://placehold.it/150x100" alt="Глина для укладки волос" width="50" height="50">
+            <p>
+              Глина для укладки волос<br>
+              &laquo;AMERICAN CREW&raquo;
+            </p>
+            <div class="buy">
+              <div class="price">500 руб.</div>
+              <a href="#">Купить</a>
             </div>
-            <a href="#">Купить</a>
           </div>
           <div class="item">
-            <img src="http://placehold.it/150x100" alt="Гель для волос">
-            Гель для волос<br>
-            &laquo;AMERICAN CREW&raquo;
-            <div class="price">
-              300 руб.
+            <img src="http://placehold.it/150x100" alt="Гель для волос" width="50" height="50">
+            <p>
+              Гель для волос<br>
+              &laquo;AMERICAN CREW&raquo;
+            </p>
+            <div class="buy">
+              <div class="price">300 руб.</div>
+              <a href="#">Купить</a>
             </div>
-            <a href="#">Купить</a>
           </div>
           <div class="item">
-            <img src="http://placehold.it/150x100" alt="Набор для бритья">
-            Набор для бритья<br>
-            &laquo;BAXTER OF CALIFORNIA&raquo;
-            <div class="price">
-              3 900 руб.
+            <img src="http://placehold.it/150x100" alt="Набор для бритья" width="50" height="50">
+            <p>
+              Набор для бритья<br>
+              &laquo;BAXTER OF CALIFORNIA&raquo;
+            </p>
+            <div class="buy">
+              <div class="price">3 900 руб.</div>
+              <a href="#">Купить</a>
             </div>
-            <a href="#">Купить</a>
           </div>
         </div>
       </div>
-      <a href="#" class="page">1</a>
-      <a href="#" class="page">2</a>
-      <a href="#" class="page">3</a>
-      <a href="#" class="page">4</a>
+      <ul class="page">
+        <li class="active-page">
+          1
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">4</a>
+        </li>
+    </ul>
     </main>
     <footer class="main-footer">
       <div class="container">
