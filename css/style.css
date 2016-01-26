@@ -1,0 +1,15 @@
+body {
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "PT Sans Narrow";
+  text-transform: uppercase;
+}
+h2.index-content-title {
+  font-size: 30px;
+}
+b.features-name {
+  font-size: 30px;
+  color: #f7f4f1;
+}
