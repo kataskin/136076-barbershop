@@ -6,10 +6,17 @@ body {
   font-family: "PT Sans Narrow";
   text-transform: uppercase;
 }
-h2.index-content-title {
+h2 {
   font-size: 30px;
+  line-height: normal;
+  color: #000000;
+  font-weight: bold;
+  font-family: "PT Sans Narrow";
 }
-b.features-name {
-  font-size: 30px;
-  color: #f7f4f1;
+h3 {
+  font-size: 24px;
+  line-height: normal;
+  color: #000000;
+  font-weight: bold;
+  font-family: "PT Sans Narrow";
 }
