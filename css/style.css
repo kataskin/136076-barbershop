@@ -1,22 +1,356 @@
 body {
+/*  background: url("../img/barbershop-item.png") no-repeat 50% 0;
+  background-size: 1200px auto; */
+  /*  background: url("../img/_barbershop-shop.png") no-repeat 50% 0;
+    background-size: 1200px auto; */
+
+
+  margin: 0;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 16px;
   color: #000000;
   font-weight: bold;
   font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
-h2 {
-  font-size: 30px;
-  line-height: 36px;
-  color: #000000;
-  font-weight: bold;
-  font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
-h3 {
-  font-size: 24px;
-  line-height: 29px;
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  /* Только для оформления сетки */
+  outline: 2px solid green;
+  min-height: 70px;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!Header!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.main-header {
+  margin-bottom: 56px;
+
+  /* Только для оформления сетки */
+  outline: 2px solid red;
+  min-height: 70px;
+}
+
+.main-navigation {
+  float: left;
+  width: 780px;
+
+  /* Только для оформления сетки */
+  outline: 2px solid yellow;
+  min-height: 70px;
+}
+
+.main-navigation li,
+.breadcrumbs li {
+  float: left;
+}
+
+.logo {
+  margin-top: 0;
+}
+
+.user-block {
+  float: right;
+  width: 140px;
+
+  /* Только для оформления сетки */
+  outline: 2px solid yellow;
+  min-height: 70px;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!index.html!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.index-logo {
+  width: 368px;
+  min-height: 204px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.features-item {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+
+  /* Только для оформления сетки */
+  min-height: 175px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.index-content {
+  margin-bottom: 35px;
+  padding: 50px 80px;
+}
+
+.index-content:last-child {
+  margin-bottom: 65px;
+}
+
+.index-content-left {
+  float: left;
+  width: 380px;
+
+  /* Только для оформления сетки */
+  min-height: 330px;
+}
+
+.index-content-right {
+  float: right;
+  width: 300px;
+
+  /* Только для оформления сетки */
+  min-height: 330px;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!Footer!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.main-footer {
+  margin-top: 50px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  /* Только для оформления сетки */
+  outline: 2px solid red;
+}
+
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+
+  /* Только для оформления сетки */
+  outline: 2px solid red;
+  min-height: 90px;
+}
+
+.footer-social {
+  float: left;
+  width: 180px;
+
+  /* Только для оформления сетки */
+  outline: 2px solid red;
+  min-height: 90px;
+}
+
+.footer-copyright {
+  float: right;
+  width: 180px;
+
+  /* Только для оформления сетки */
+  outline: 2px solid red;
+  min-height: 90px;
+}
+
+/*!!!!!!!!!!!!!!!!!!!Страница barbershop-shop.html!!!!!!!!!!!!!!!!!!!!!*/
+
+.main-title {
+  margin-bottom: 22px;
+  font-size: 30px;
+  line-height: 30px;
   color: #000000;
   font-weight: bold;
   font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
+
+  /* Только для оформления сетки */
+  outline: 2px solid red;
+}
+
+.breadcrumbs{
+  margin-bottom: 53px;
+  padding: 2px;
+
+  /* Только для оформления сетки */
+  outline: 2px solid yellow;
+}
+
+.shop-content-left {
+  width: 220px;
+  float: left;
+
+  /* Только для оформления сетки */
+  outline: 2px solid blue;
+}
+
+.filter {
+  margin-top: 32px;
+  margin-bottom: 52px;
+
+  /* Только для оформления сетки */
+  outline: 2px solid red;
+}
+
+.filter li {
+  padding: 0;
+  margin-bottom: 21px;
+
+  /* Только для оформления сетки */
+  outline: 2px solid green;
+}
+
+.filter input {
+  margin: 0;
+}
+
+.shop-content-right {
+  width: 700px;
+  float: right;
+
+  /* Только для оформления сетки */
+  outline: 2px solid blue;
+
+}
+
+.mini-title {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 27px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
+
+  /* Только для оформления сетки */
+  outline: 2px solid yellow;
+}
+
+.products {
+  margin-bottom: 25px;
+  min-height: 613px;
+
+}
+
+.item {
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  /* Только для оформления сетки */
+  outline: 2px solid red;
+
+}
+
+.item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.buy {
+
+  /* Только для оформления сетки */
+  outline: 2px solid magenta;
+}
+
+.price {
+  float: left;
+
+  /* Только для оформления сетки */
+  outline: 2px solid yellow;
+}
+
+.pages {
+  padding: 0;
+  margin: 0;
+  /* Только для оформления сетки */
+  outline: 2px solid yellow;
+}
+
+.page {
+  float: left;
+  height: 44px;
+  width: 44px;
+  vertical-align: top;
+  margin-right: 6px;
+
+  /* Только для оформления сетки */
+  outline: 2px solid red;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!barbershop-item.html!!!!!!!!!!!!!!!!*/
+
+.content {
+  /* Только для оформления сетки */
+  outline: 2px solid red;
+}
+
+.photos {
+  float: left;
+  width: 460px;
+
+  /* Только для оформления сетки */
+  outline: 2px solid blue;
+}
+
+.photo {
+  display: block;
+
+  /* Только для оформления сетки */
+  outline: 2px solid yellow;
+}
+
+.mini {
+  float: left;
+  margin-top: 21px;
+  margin-right: 20px;
+}
+
+.mini:nth-child(3n) {
+  margin-right: 0;
+}
+
+.description {
+  float: right;
+  width: 390px;
+
+
+  /* Только для оформления сетки */
+  outline: 2px solid blue;
+}
+
+.availability {
+padding-top: 27px;
+margin-bottom: 38px;
+
+  /* Только для оформления сетки */
+  outline: 2px solid red;
+}
+
+.description .left {
+  float: left;
+  padding: 0;
+  margin: 0;
+
+  /* Только для оформления сетки */
+  outline: 2px solid yellow;
+}
+
+.description .right {
+  float: right;
+  padding: 0;
+  margin: 0;
+
+  /* Только для оформления сетки */
+  outline: 2px solid yellow;
+}
+
+.composition {
+  padding-top: 65px;
+
+  /* Только для оформления сетки */
+  outline: 2px solid yellow;
 }

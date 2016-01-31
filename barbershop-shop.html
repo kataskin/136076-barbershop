@@ -8,11 +8,13 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <a href="#" class="logo">
-          <img src="img/logo.png" alt="Barbershop" width="111" height="24">
-        </a>
         <nav class="main-navigation">
           <ul>
+            <li>
+              <a href="#" class="logo">
+                <img src="img/logo.png" alt="Barbershop" width="111" height="24">
+              </a>
+            </li>
             <li>
               <a href="#">Информация</a>
             </li>
@@ -36,24 +38,22 @@
       </div>
     </header>
     <main class="container">
-      <h2>Средства для ухода</h2>
-      <div class="breadcrumbs">
-        <ul>
-          <li>
-            <a href="#">Главная</a>
-          </li>
-          <li>
-            <a href="#">Магазин</a>
-          </li>
-          <li>
-            Средства для ухода
-          </li>
-        </ul>
-      </div>
-      <div class="content">
-        <div class="catalog-content-left">
+      <h1 class="main-title">Средства для ухода</h1>
+      <ul class="breadcrumbs clearfix">
+        <li>
+          <a href="#">Главная</a>
+        </li>
+        <li>
+          <a href="#">Магазин</a>
+        </li>
+        <li>
+          Средства для ухода
+        </li>
+      </ul>
+      <div class="content clearfix">
+        <div class="shop-content-left">
           <form action="#" method="get">
-            <h3>Производители:</h3>
+            <h3 class="mini-title">Производители:</h3>
             <ul class="filter">
               <li>
                 <input type="checkbox" id="maker-1" name="maker">
@@ -92,7 +92,7 @@
                 </label>
               </li>
             </ul>
-            <h3>Группы товаров:</h3>
+            <h3 class="mini-title">Группы товаров:</h3>
             <ul class="filter">
               <li>
                 <input type="radio" name="product-groups" value="shaving" id="group-1" checked>
@@ -116,92 +116,94 @@
             <input type="submit" value="Показать" class="btn view">
           </form>
         </div>
-        <div class="catalog-content-right">
-          <div class="item">
-            <img src="img/product-1.jpg" alt="Набор для путешествий" width="220" height="165">
-            <p>
-              Набор для путешествий<br>
-              &laquo;BAXTER OF CALIFORNIA&raquo;
-            <p>
-            <div class="buy">
-              <div class="price">2 900 руб.</div>
-              <a href="#" class="btn">Купить</a>
+        <div class="shop-content-right">
+          <div class="products clearfix">
+            <div class="item">
+              <img src="img/product-1.jpg" alt="Набор для путешествий" width="220" height="165">
+              <p>
+                Набор для путешествий<br>
+                &laquo;BAXTER OF CALIFORNIA&raquo;
+              <p>
+              <div class="buy clearfix">
+                <div class="price">2 900 руб.</div>
+                <a href="#" class="btn">Купить</a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/product-2.jpg" alt="Увлажняющий кондиционер" width="220" height="165">
+              <p>
+                Увлажняющий кондиционер<br>
+                &laquo;BAXTER OF CALIFORNIA&raquo;
+              </p>
+              <div class="buy clearfix">
+                <div class="price">750 руб.</div>
+                <a href="#" class="btn">Купить</a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/product-3.jpg" alt="Гель для волос" width="220" height="165">
+              <p>
+                Гель для волос<br>
+                &laquo;SUAVECITO&raquo;
+              </p>
+              <div class="buy clearfix">
+                <div class="price">290 руб.</div>
+                <a href="#" class="btn">Купить</a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/product-4.jpg" alt="Глина для укладки волос" width="220" height="165">
+              <p>
+                Глина для укладки волос<br>
+                &laquo;AMERICAN CREW&raquo;
+              </p>
+              <div class="buy clearfix">
+                <div class="price">500 руб.</div>
+                <a href="#" class="btn">Купить</a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/product-5.jpg" alt="Гель для волос" width="220" height="165">
+              <p>
+                Гель для волос<br>
+                &laquo;AMERICAN CREW&raquo;
+              </p>
+              <div class="buy clearfix">
+                <div class="price">300 руб.</div>
+                <a href="#" class="btn">Купить</a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/product-6.jpg" alt="Набор для бритья" width="220" height="165">
+              <p>
+                Набор для бритья<br>
+                &laquo;BAXTER OF CALIFORNIA&raquo;
+              </p>
+              <div class="buy clearfix">
+                <div class="price">3 900 руб.</div>
+                <a href="#" class="btn">Купить</a>
+              </div>
             </div>
           </div>
-          <div class="item">
-            <img src="img/product-2.jpg" alt="Увлажняющий кондиционер" width="220" height="165">
-            <p>
-              Увлажняющий кондиционер<br>
-              &laquo;BAXTER OF CALIFORNIA&raquo;
-            </p>
-            <div class="buy">
-              <div class="price">750 руб.</div>
-              <a href="#" class="btn">Купить</a>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/product-3.jpg" alt="Гель для волос" width="220" height="165">
-            <p>
-              Гель для волос<br>
-              &laquo;SUAVECITO&raquo;
-            </p>
-            <div class="buy">
-              <div class="price">290 руб.</div>
-              <a href="#" class="btn">Купить</a>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/product-4.jpg" alt="Глина для укладки волос" width="220" height="165">
-            <p>
-              Глина для укладки волос<br>
-              &laquo;AMERICAN CREW&raquo;
-            </p>
-            <div class="buy">
-              <div class="price">500 руб.</div>
-              <a href="#" class="btn">Купить</a>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/product-5.jpg" alt="Гель для волос" width="220" height="165">
-            <p>
-              Гель для волос<br>
-              &laquo;AMERICAN CREW&raquo;
-            </p>
-            <div class="buy">
-              <div class="price">300 руб.</div>
-              <a href="#" class="btn">Купить</a>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/product-6.jpg" alt="Набор для бритья" width="220" height="165">
-            <p>
-              Набор для бритья<br>
-              &laquo;BAXTER OF CALIFORNIA&raquo;
-            </p>
-            <div class="buy">
-              <div class="price">3 900 руб.</div>
-              <a href="#" class="btn">Купить</a>
-            </div>
-          </div>
+          <ul class="pages clearfix">
+            <li class="page active-page">
+              1
+            </li>
+            <li class="page">
+              <a href="#">2</a>
+            </li>
+            <li class="page">
+              <a href="#">3</a>
+            </li>
+            <li class="page">
+              <a href="#">4</a>
+            </li>
+        </ul>
         </div>
       </div>
-      <ul class="page">
-        <li class="active-page">
-          1
-        </li>
-        <li>
-          <a href="#">2</a>
-        </li>
-        <li>
-          <a href="#">3</a>
-        </li>
-        <li>
-          <a href="#">4</a>
-        </li>
-    </ul>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-contacts">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
