@@ -243,6 +243,8 @@ body {
   margin-right: 20px;
   margin-bottom: 20px;
 
+  font-size: 14px;
+
   /* Только для оформления сетки */
   outline: 2px solid red;
 
