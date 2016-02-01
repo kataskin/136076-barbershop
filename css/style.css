@@ -231,12 +231,14 @@ body {
 
 .products {
   margin-bottom: 25px;
-  min-height: 613px;
+
+  font-size: 0;
 
 }
 
 .item {
-  float: left;
+  display: inline-block;
+  vertical-align: top;
   width: 220px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -258,6 +260,7 @@ body {
 
 .price {
   float: left;
+  width: 109px;
 
   /* Только для оформления сетки */
   outline: 2px solid yellow;
@@ -274,7 +277,6 @@ body {
   float: left;
   height: 44px;
   width: 44px;
-  vertical-align: top;
   margin-right: 6px;
 
   /* Только для оформления сетки */
@@ -305,6 +307,7 @@ body {
 
 .mini {
   float: left;
+  max-width: 140px;
   margin-top: 21px;
   margin-right: 20px;
 }
@@ -320,6 +323,13 @@ body {
 
   /* Только для оформления сетки */
   outline: 2px solid blue;
+}
+
+.product-info {
+  margin-bottom: 65px;
+
+  /* Только для оформления сетки */
+  outline: 2px solid yellow;
 }
 
 .availability {
@@ -343,13 +353,6 @@ margin-bottom: 38px;
   float: right;
   padding: 0;
   margin: 0;
-
-  /* Только для оформления сетки */
-  outline: 2px solid yellow;
-}
-
-.composition {
-  padding-top: 65px;
 
   /* Только для оформления сетки */
   outline: 2px solid yellow;
