@@ -1,20 +1,29 @@
-body {
+
 /*  background: url("../img/barbershop-item.png") no-repeat 50% 0;
   background-size: 1200px auto; */
   /*  background: url("../img/_barbershop-shop.png") no-repeat 50% 0;
     background-size: 1200px auto; */
 
 
+body {
   margin: 0;
+  margin-top: 3px;
+  min-width: 960px;
+
+  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
-  color: #000000;
-  font-weight: bold;
-  font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #ffffff;
   text-transform: uppercase;
+
+  background: url("../img/_barbershop-shop.png") no-repeat 50% 0;
+  /*background-size: 1200px auto;  background: #000000 url("../img/body-bg.jpg") no-repeat center top;*/
 }
+
 .clearfix::after {
   content: "";
+
   display: table;
   clear: both;
 }
@@ -23,57 +32,110 @@ body {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-
-  /* Только для оформления сетки */
-  outline: 2px solid green;
-  min-height: 70px;
 }
 
-/*!!!!!!!!!!!!!!!!!!!!!Header!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
 .main-header {
-  margin-bottom: 56px;
+  margin-bottom: 55px;
 
-  /* Только для оформления сетки */
-  outline: 2px solid red;
-  min-height: 70px;
+  color: #ffffff;
+
+  background-color: #000000;
 }
 
 .main-navigation {
   float: left;
   width: 780px;
-
-  /* Только для оформления сетки */
-  outline: 2px solid yellow;
-  min-height: 70px;
 }
 
-.main-navigation li,
-.breadcrumbs li {
-  float: left;
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-size: 0;
 }
 
-.logo {
-  margin-top: 0;
+.main-navigation li {
+  display: inline-block;
+
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+}
+
+.main-navigation a {
+  display: block;
+  padding: 25px 20px;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-navigation .logo {
+  padding-bottom: 17px;
+}
+
+.active a {
+  padding: 25px 0 21px 0;
+  margin: 0 20px;
+  border-bottom: 4px solid #ffffff;
+}
+
+.main-navigation a:hover {
+  background: #242424;
 }
 
 .user-block {
   float: right;
-  width: 140px;
-
-  /* Только для оформления сетки */
-  outline: 2px solid yellow;
-  min-height: 70px;
+  max-width: 140px;
 }
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!index.html!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.login {
+  position: relative;
+
+  display: inline-block;
+  padding: 25px 20px;
+  padding-left: 50px;
+
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.login:hover {
+  background-color: #242424;
+}
+
+.login::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 20px;
+
+  width: 18px;
+  height: 18px;
+
+  background: transparent url("img/sprite.png") no-repeat;
+  background-position: -1px -15px;
+  opacity: 0.3;
+}
+
+.login:hover::before {
+  opacity: 1;
+}
 
 .index-logo {
   width: 368px;
-  min-height: 204px;
-  margin-right: auto;
-  margin-left: auto;
+  height: 204px;
+  margin: 0 auto;
   margin-bottom: 25px;
+}
+
+.index-logo img {
+  width: 368px;
+  height: 204px;
 }
 
 .features {
@@ -85,81 +147,307 @@ body {
   width: 300px;
   margin-right: 20px;
 
-  /* Только для оформления сетки */
-  min-height: 175px;
+  text-align: center;
 }
 
 .features-item:last-child {
   margin-right: 0;
 }
 
+.features-name {
+  position: relative;
+
+  display: block;
+  margin-bottom: 30px;
+  padding-bottom: 35px;
+
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.features-item p {
+  margin: 10px;
+  margin-bottom: 0;
+}
+
+.features-name::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+
+  background-color: #ffffff;
+  transform: rotate(45deg);
+}
+
 .index-content {
   margin-bottom: 35px;
   padding: 50px 80px;
-}
 
-.index-content:last-child {
-  margin-bottom: 65px;
+  color: #000000;
+
+  background: url("../img/index-content-shadow.png") no-repeat center,
+  #f8f5f2 url("../img/pattern-white.jpg");
 }
 
 .index-content-left {
   float: left;
   width: 380px;
-
-  /* Только для оформления сетки */
-  min-height: 330px;
 }
 
 .index-content-right {
   float: right;
   width: 300px;
-
-  /* Только для оформления сетки */
-  min-height: 330px;
 }
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!Footer!!!!!!!!!!!!!!!!!!!!!!!*/
+.index-content-title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.index-content p {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.news-preview {
+  margin: 0;
+  padding: 0;
+  padding-right: 35px;
+
+  list-style: none;
+}
+
+.news-preview li {
+  margin-bottom: 25px;
+}
+
+.news-preview p {
+  margin-bottom: 0;
+}
+
+.news-preview time {
+  text-transform: none;
+}
+
+.btn {
+  display: inline-block;
+  margin-right: 16px;
+  padding: 10px 33px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  vertical-align: top;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #663d15;
+}
+
+.btn.disabled,
+.btn:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover {
+  background-color: #000000;
+}
+
+.gallery {
+  position: relative;
+
+  height: 260px;
+}
+
+.gallery-content {
+  height: 164px;
+  margin: 0;
+
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
+}
+
+.gallery-content img {
+  width: 286px;
+  height: 164px;
+}
+
+.gallery .btn {
+  position: absolute;
+  bottom: 0;
+
+  width: 140px;
+  margin: 0;
+}
+
+.gallery-prev {
+  left: 0;
+}
+
+.gallery-next {
+  right: 0;
+}
+
+.appointment-form input {
+  float: left;
+  width: 106px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 7px 15px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.appointment-form input:focus {
+  border: 2px solid #663d15;
+}
+
+.appointment-form input:nth-child(2n) {
+  margin-right: 0;
+}
+
+.appointment-form .btn {
+  clear: both;
+  width: 100%;
+}
 
 .main-footer {
-  margin-top: 50px;
+  margin-top: 65px;
   padding-top: 60px;
   padding-bottom: 40px;
 
-  /* Только для оформления сетки */
-  outline: 2px solid red;
+  color: #ffffff; /* лучше явно прописать везде для футера */
+
+  background: #252525 url("../img/pattern-black.jpg");
 }
 
 .footer-contacts {
   float: left;
   width: 320px;
   margin-right: 60px;
+}
 
-  /* Только для оформления сетки */
-  outline: 2px solid red;
-  min-height: 90px;
+.footer-contacts a {
+  color: #ffffff;
+}
+
+.footer-contacts a:hover {
+  text-decoration: none;
 }
 
 .footer-social {
   float: left;
   width: 180px;
 
-  /* Только для оформления сетки */
-  outline: 2px solid red;
-  min-height: 90px;
+  text-align: center;
 }
 
 .footer-copyright {
   float: right;
-  width: 180px;
+  max-width: 180px;
+}
 
-  /* Только для оформления сетки */
-  outline: 2px solid red;
-  min-height: 90px;
+.footer-social p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.social-btn {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin: 0 2px;
+
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+
+  background: #000000 url("img/sprite.png") no-repeat center;
+
+  transition:
+    background-position 0.5s,
+    background-color 0.5s;
+}
+
+.social-btn:hover {
+  background-color: #ffffff;
+}
+
+.social-btn-vk {
+  background-position: 9px -447px;
+}
+
+.social-btn-fb {
+  background-position: 15px -171px;
+}
+
+.social-btn-inst {
+  background-position: 12px -313px;
+}
+
+.social-btn-vk:hover {
+  background-position: 9px -381px;
+}
+
+.social-btn-fb:hover {
+  background-position: 15px -100px;
+}
+
+.social-btn-inst:hover {
+  background-position: 12px -242px;
+}
+
+.footer-copyright p {
+  margin: 0;
+  margin-bottom: 15px;
+
+  text-align: center;
+}
+
+.footer-copyright .btn {
+  margin-right: 0;
+}
+
+.footer-copyright .btn:hover {
+  color: #000000;
+
+  background-color: #ffffff;
 }
 
 /*!!!!!!!!!!!!!!!!!!!Страница barbershop-shop.html!!!!!!!!!!!!!!!!!!!!!*/
 
 .main-title {
+  margin-top: 0;
   margin-bottom: 22px;
   font-size: 30px;
   line-height: 30px;
@@ -172,11 +460,26 @@ body {
 }
 
 .breadcrumbs{
-  margin-bottom: 53px;
-  padding: 2px;
+  margin-bottom: 40px;
+  padding: 0;
+  font-size: 0;
 
   /* Только для оформления сетки */
   outline: 2px solid yellow;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  margin-right: 40px;
+  list-style: none;
+  font-size: 14px;
+  line-height: 24px;
+  color: #aba9a7;
+}
+
+.breadcrumbs a {
+  color: #000000;
+  text-decoration: none;
 }
 
 .shop-content-left {
@@ -188,23 +491,34 @@ body {
 }
 
 .filter {
-  margin-top: 32px;
-  margin-bottom: 52px;
+  margin-top: 30px;
+  margin-bottom: 48px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
 
   /* Только для оформления сетки */
   outline: 2px solid red;
 }
 
 .filter li {
-  padding: 0;
-  margin-bottom: 21px;
+  margin-bottom: 13px;
+  padding-left: 43px;
+  padding-right: 10px;
+  list-style: none;
 
   /* Только для оформления сетки */
   outline: 2px solid green;
 }
 
 .filter input {
-  margin: 0;
+  display: none;
+}
+
+.view {
+  padding-left: 29px;
+  padding-right: 29px;
 }
 
 .shop-content-right {
@@ -252,6 +566,12 @@ body {
 
 .item:nth-child(3n) {
   margin-right: 0;
+}
+
+.product-name {
+  color: #000000;
+  text-decoration: none;
+  text-transform: none;
 }
 
 .buy {
