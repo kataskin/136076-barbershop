@@ -546,6 +546,7 @@ body {
 }
 
 .filter li {
+  position: relative;
   margin-bottom: 13px;
   padding-left: 43px;
   padding-right: 10px;
@@ -553,7 +554,8 @@ body {
 }
 
 .filter input {
-  display: none;
+  position: absolute;
+  left: 0;
 }
 
 .view {
