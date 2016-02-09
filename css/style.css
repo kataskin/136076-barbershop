@@ -4,10 +4,72 @@
   /*  background: url("../img/_barbershop-shop.png") no-repeat 50% 0;
     background-size: 1200px auto; */
 
+/*Sprite!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite--icon-login {
+    width: 18px;
+    height: 16px;
+    background-position: -10px -10px;
+}
+
+.sprite-Locked {
+    width: 15px;
+    height: 17px;
+    background-position: -10px -46px;
+}
+
+.sprite-User-copy-2 {
+    width: 15px;
+    height: 15px;
+    background-position: -10px -83px;
+}
+
+.sprite-f {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -118px;
+}
+
+.sprite-f-black {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -160px;
+}
+
+.sprite-inst {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -202px;
+}
+
+.sprite-inst-black {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -243px;
+}
+
+.sprite-v {
+    width: 25px;
+    height: 16px;
+    background-position: -10px -284px;
+}
+
+.sprite-v-black {
+    width: 25px;
+    height: 16px;
+    background-position: -10px -320px;
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 body {
   margin: 0;
-  margin-top: 3px;
   min-width: 960px;
 
   font-weight: 700;
@@ -21,7 +83,7 @@ body {
 }
 
 .second-page {
-  background: url("../img/bg-page.png") repeat 0 0;
+  background: url("../img/pattern-white.png") repeat 0 0;
 }
 
 .clearfix::after {
@@ -38,6 +100,7 @@ body {
 
 .main-header {
   margin-bottom: 55px;
+  padding-top: 3px;
 
   color: #ffffff;
 
@@ -83,7 +146,7 @@ body {
   border-bottom: 4px solid #ffffff;
 }
 
-.main-navigation a:hover,
+.main-navigation a:hover:not(.logo),
 .main-navigation .active:hover {
   background: #242424;
 }
@@ -195,7 +258,7 @@ body {
   color: #000000;
 
   background: url("../img/index-content-shadow.png") no-repeat center,
-  #f8f5f2 url("../img/pattern-white.jpg");
+  #f8f5f2 url("../img/pattern-white.png");
 }
 
 .index-content-left {
@@ -352,6 +415,7 @@ body {
   color: #ffffff; /* лучше явно прописать везде для футера */
 
   background: #252525 url("../img/pattern-black.jpg");
+  box-shadow: inset 0 10px 30px 0 #000000;
 }
 
 .footer-contacts {
@@ -407,7 +471,7 @@ body {
 }
 
 .social-btn-vk {
-  background-position: 0 -274px;
+  background-position: 0 -270px;
 }
 
 .social-btn-fb {
@@ -415,11 +479,11 @@ body {
 }
 
 .social-btn-inst {
-  background-position: 3px -192px;
+  background-position: 2px -192px;
 }
 
 .social-btn-vk:hover {
-  background-position: 0 -310px;
+  background-position: 0 -307px;
 }
 
 .social-btn-fb:hover {
@@ -427,7 +491,7 @@ body {
 }
 
 .social-btn-inst:hover {
-  background-position: 3px -233px;
+  background-position: 2px -233px;
 }
 
 .footer-copyright p {
@@ -463,7 +527,7 @@ body {
 }
 
 .breadcrumbs{
-  margin-bottom: 48px;
+  margin-bottom: 40px;
   padding: 0;
   font-size: 0;
 
@@ -472,6 +536,7 @@ body {
 }
 
 .breadcrumbs li {
+  position: relative;
   display: inline-block;
   margin-right: 40px;
   list-style: none;
@@ -480,11 +545,11 @@ body {
   color: #aba9a7;
 }
 
-.breadcrumbs a::after {
+.breadcrumbs li:not(:last-child)::after {
   content: "";
   display: block;
   position: absolute;
-  top: 3px;
+  top: 7px;
   right: -23px;
   width: 8px;
   height: 8px;
@@ -493,7 +558,6 @@ body {
 }
 
 .breadcrumbs a {
-  position: relative;
   color: #000000;
   text-decoration: none;
 }
@@ -501,7 +565,6 @@ body {
 .shop-content-left {
   width: 220px;
   float: left;
-  margin-top: -8px;
 
   /* Только для оформления сетки */
   outline: 2px solid blue;
@@ -541,6 +604,7 @@ body {
 .shop-content-right {
   width: 700px;
   float: right;
+  padding-top: 8px;
 
   /* Только для оформления сетки */
   outline: 2px solid blue;
@@ -573,6 +637,7 @@ body {
   margin-bottom: 20px;
 
   font-size: 14px;
+  box-shadow: 0 0 20px 0 grey;
 
   /* Только для оформления сетки */
   outline: 2px solid red;
@@ -591,6 +656,7 @@ body {
   margin-bottom: 12px;
   margin-top: 12px;
   padding-left: 16px;
+  padding-right: 16px;
   font-size: 14px;
   line-height: 18px;
 }
@@ -619,6 +685,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #000000;
+  background-color: #e5e5e5;
 
   /* Только для оформления сетки */
   outline: 2px solid yellow;
@@ -678,6 +745,7 @@ body {
 .photos {
   float: left;
   width: 460px;
+  padding-top: 8px;
 
   /* Только для оформления сетки */
   outline: 2px solid blue;
@@ -685,6 +753,7 @@ body {
 
 .photo {
   display: block;
+  box-shadow: 0 0 20px 0 grey;
 
   /* Только для оформления сетки */
   outline: 2px solid yellow;
@@ -704,6 +773,7 @@ body {
 .description {
   float: right;
   width: 390px;
+  padding-top: 8px;
 
 
   /* Только для оформления сетки */
