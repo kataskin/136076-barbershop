@@ -792,7 +792,7 @@ margin-bottom: 28px;
 }
 
 .modal-content {
-  position: absolute;
+  position: fixed;
   top: 120px;
   left: 50%;
 
@@ -852,11 +852,11 @@ margin-bottom: 28px;
 .modal-content-close::after {
   content: "";
   position: absolute;
-  top: 10px;
-  left: 2px;
+  top: 15px;
+  left: 0px;
 
-  width: 19px;
-  height: 3px;
+  width: 25px;
+  height: 5px;
   background-color: #d0d0d0;
   border-radius: 1px;
 }
